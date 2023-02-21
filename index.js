@@ -3,7 +3,7 @@ const Engineer = require("./lib/Engineer")
 const Intern = require("./lib/Intern")
 const Manager = require("./lib/Manager")
 const fs = require("fs")
-const { off } = require("process")
+const createHTML = require("./utils/createHTML")
 let mnagerDB = []
 let engineerDB = []
 let internDB = []
@@ -140,5 +140,12 @@ function addIntern() {
         const newHireIntern = new Intern(name, id, email, officenumber)
         internDB.push(newHireIntern)
         hireTeamMembers()
+    })
+}
+
+
+function generateHTML(){
+    fs.writeFileSync("./dist/index.html",createHTML(managerDB,engineerDB,internDB),function(err){
+        if(err) throw err;
     })
 }
