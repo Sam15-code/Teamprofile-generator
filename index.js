@@ -1,6 +1,6 @@
 const inquirer = require("inquirer")
 const Engineer = require("./lib/Engineer")
-const Intern = require("./lib/Intern")
+const Intern = require("./lib/intern")
 const Manager = require("./lib/Manager")
 const fs = require("fs")
 const createHTML = require("./utils/createHTML")
@@ -101,7 +101,7 @@ function addEngineer() {
         }
     ]).then(({ name, id, email, officenumber }) => {
         const newHireEngineer = new Engineer(name, id, email, officenumber)
-       engineerDB.push(newHireEngineer)
+        engineerDB.push(newHireEngineer)
         hireTeamMembers()
     })
 }
@@ -144,8 +144,8 @@ function addIntern() {
 }
 
 
-function generateHTML(){
-    fs.writeFileSync("./dist/index.html",createHTML(managerDB,engineerDB,internDB),function(err){
-        if(err) throw err;
+function generateHTML() {
+    fs.writeFileSync("./dist/index.html", createHTML(managerDB, engineerDB, internDB), function (err) {
+        if (err) throw err;
     })
 }
