@@ -9,11 +9,9 @@ This application will generate a team profile HTML webpage using node.js based o
 - [Teamprofile-generator](#teamprofile-generator)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
-- [User Story](#user-story)
   - [Acceptance Criteria](#acceptance-criteria)
   - [License](#license)
-
-# User Story
+  - [Screenrecordings](#screenrecordings)
 
 ```md
 AS A manager
@@ -48,4 +46,7 @@ THEN I exit the application, and the HTML is generated
 
 This project was created by Ibtissam Elbessali.
 
+
+## Screenrecordings
+![Screenrecording]()
 

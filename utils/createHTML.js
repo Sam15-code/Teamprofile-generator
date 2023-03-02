@@ -19,7 +19,9 @@ const htmlcode =`<!doctype html>
     <section class="row">
     <section class="col-md-12">
     <h4 class="text-center">Manager</h4>
+    <article class="d-flex flex-wrap justify-content-evenly">
     ${managerTemplate}
+    </article>
     </section>
     </section>
     <section class="row">
@@ -51,7 +53,7 @@ function createManagerHTML(managerDB){
         manager += `
         <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Manager: ${managerDB[i].name}/h5>
+    <h5 class="card-title">Manager: ${managerDB[i].name}</h5>
     <p class="card-text">Id: ${managerDB[i].id}</p>
     <p class="card-text">Office Number: ${managerDB[i].officeNumber}</p>
     <a href="mailto:${managerDB[i].email}" class="btn btn-primary">Email me at ${managerDB[i].email}</a>
@@ -69,7 +71,7 @@ function createEngineerHTML(engineerDB){
         engineer += `
         <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Manager: ${engineerDB[i].name}/h5>
+    <h5 class="card-title">Manager: ${engineerDB[i].name}</h5>
     <p class="card-text">Id: ${engineerDB[i].id}</p>
     <a href="https://github.com/${engineerDB[i].github}" class="btn btn-primary">Github Profil</a>
     <a href="mailto:${engineerDB[i].email}" class="btn btn-primary">Email me at ${engineerDB[i].email}</a>
@@ -87,9 +89,8 @@ function createInternHTML(internDB){
         intern += `
         <div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Manager: ${internDB[i].name}/h5>
+    <h5 class="card-title">Manager: ${internDB[i].name}</h5>
     <p class="card-text">Id: ${internDB[i].id}</p>
-    <a href="https://github.com/${internDB[i].github}" class="btn btn-primary">Github Profil</a>
     <a href="mailto:${internDB[i].email}" class="btn btn-primary">Email me at ${internDB[i].email}</a>
   </div>
 </div>
@@ -98,3 +99,6 @@ function createInternHTML(internDB){
     }
     return intern
 }
+
+
+module.exports = createHTML

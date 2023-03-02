@@ -1,16 +1,16 @@
-import { prompt } from "./inquirer"
-import Engineer from "./lib/Engineer"
-import Intern from "./lib/intern"
-import Manager from "./lib/Manager"
-import { writeFileSync } from "fs"
-import createHTML from "./utils/createHTML"
+const inquirer = require("inquirer")
+const Engineer = require ("./lib/Engineer")
+const Intern = require ("./lib/intern")
+const Manager =require ("./lib/Manager")
+const { writeFileSync } = require ("fs")
+const createHTML = require ("./utils/createHTML")
 let managerDB = []
 let engineerDB = []
 let internDB = []
 
 
 function addManager() {
-    prompt([
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -48,7 +48,7 @@ function addManager() {
 
 
 function hireTeamMembers() {
-    prompt([
+    inquirer.prompt([
         {
             type: "list",
             message: "Do you like add team members? ",
@@ -70,7 +70,7 @@ function hireTeamMembers() {
 }
 
 function addEngineer() {
-    prompt([
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -96,7 +96,7 @@ function addEngineer() {
         {
             type: "input",
             name: "officenumber",
-            message: "Please enter Team Engineer's officenumber: ",
+            message: "Please enter Team Engineer's github: ",
 
         }
     ]).then(({ name, id, email, officenumber }) => {
@@ -107,7 +107,7 @@ function addEngineer() {
 }
 
 function addIntern() {
-    prompt([
+    inquirer.prompt([
         {
             type: "input",
             name: "name",
@@ -133,7 +133,7 @@ function addIntern() {
         {
             type: "input",
             name: "officenumber",
-            message: "Please enter Team Intern's officenumber: ",
+            message: "Please enter Team Intern's school name: ",
 
         }
     ]).then(({ name, id, email, officenumber }) => {
@@ -143,13 +143,10 @@ function addIntern() {
     })
 }
     addManager()
-white_check_mark
-eyes
-raised_hands
 
 
 function generateHTML() {
-    writeFileSync("./dist/index.html", createHTML(managerDB, engineerDB, internDB), function (err) {
+    writeFileSync("index.html", createHTML(managerDB, engineerDB, internDB), function (err) {
         if (err) throw err;
     })
 }
