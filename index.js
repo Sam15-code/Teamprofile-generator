@@ -1,10 +1,10 @@
-import { prompt } from "inquirer"
+import { prompt } from "./inquirer"
 import Engineer from "./lib/Engineer"
 import Intern from "./lib/intern"
 import Manager from "./lib/Manager"
 import { writeFileSync } from "fs"
 import createHTML from "./utils/createHTML"
-let mnagerDB = []
+let managerDB = []
 let engineerDB = []
 let internDB = []
 
@@ -142,6 +142,10 @@ function addIntern() {
         hireTeamMembers()
     })
 }
+    addManager()
+white_check_mark
+eyes
+raised_hands
 
 
 function generateHTML() {
