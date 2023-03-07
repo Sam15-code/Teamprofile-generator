@@ -95,12 +95,12 @@ function addEngineer() {
 
         {
             type: "input",
-            name: "officenumber",
+            name: "github",
             message: "Please enter Team Engineer's github: ",
 
         }
-    ]).then(({ name, id, email, officenumber }) => {
-        const newHireEngineer = new Engineer(name, id, email, officenumber)
+    ]).then(({ name, id, email, github }) => {
+        const newHireEngineer = new Engineer(name, id, email, github)
         engineerDB.push(newHireEngineer)
         hireTeamMembers()
     })
@@ -132,12 +132,12 @@ function addIntern() {
 
         {
             type: "input",
-            name: "officenumber",
+            name: "school name",
             message: "Please enter Team Intern's school name: ",
 
         }
-    ]).then(({ name, id, email, officenumber }) => {
-        const newHireIntern = new Intern(name, id, email, officenumber)
+    ]).then(({ name, id, email, schoolName }) => {
+        const newHireIntern = new Intern(name, id, email, schoolName)
         internDB.push(newHireIntern)
         hireTeamMembers()
     })

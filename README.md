@@ -11,6 +11,7 @@ This application will generate a team profile HTML webpage using node.js based o
   - [Table of Contents](#table-of-contents)
   - [Acceptance Criteria](#acceptance-criteria)
   - [License](#license)
+  - [Screenshot](#screenshot)
   - [Screenrecordings](#screenrecordings)
 
 ```md
@@ -43,10 +44,15 @@ THEN I exit the application, and the HTML is generated
 
 
 ## License
+![License](./LICENSE)
 
-This project was created by Ibtissam Elbessali.
+
+## Screenshot
+![Screenshot](#Screenshot%202023-03-06%20at%209.29.35%20PM.png)
 
 
 ## Screenrecordings
-![Screenrecording]()
+![Screenrecording](https://drive.google.com/file/d/1yldfumrS08vN2BK0tbNUupdz5DAgMu7y/view)
+
+
 
