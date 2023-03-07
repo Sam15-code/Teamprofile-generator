@@ -48,7 +48,7 @@ THEN I exit the application, and the HTML is generated
 
 
 ### Screenshot
-![Screenshot](screenshot%202023-03-06%20at%209.29.35%20PM.png)
+[Screenshot](#Screenshot%202023-03-06%20at%209.29.35%20PM.pngscreenshot%202023-03-06%20at%209.29.35%20PM.png)
 
 
 ### Screenrecordings
