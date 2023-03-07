@@ -48,8 +48,7 @@ THEN I exit the application, and the HTML is generated
 
 
 ### Screenshot
-[Screenshot](#Screenshot%202023-03-06%20at%209.29.35%20PM.pngscreenshot%202023-03-06%20at%209.29.35%20PM.png)
-
+[Screenshot](assets/Screenshot%202023-03-06%20at%209.29.35%20PM.png)
 
 ### Screenrecordings
 [Screenrecording](https://drive.google.com/file/d/1yldfumrS08vN2BK0tbNUupdz5DAgMu7y/view)
